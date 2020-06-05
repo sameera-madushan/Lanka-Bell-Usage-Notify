@@ -6,7 +6,7 @@ This is an application for [Lanka Bell](https://www.lankabell.com) users to get 
 
 ## Run On Windows Startup
 
-1. Download and extract the compiled version from Releases tab.
+1. Download and extract the compiled version from [Releases tab](https://github.com/sameera-madushan/Lanka-Bell-Usage-Notify/releases).
 2. Right click on the "lankabell_usage_notify.exe" and click on 'Create Shortcut' to create a shortcut.
 3. Press windows key + R (The run dialog box will open). 
 4. Type __shell:startup__ and hit Enter.
