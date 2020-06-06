@@ -34,9 +34,14 @@ while True:
                 error = soup.find('div', {'id':'result'})
 
                 if not error:
-                    the_program_to_hide = win32gui.GetForegroundWindow()
-                    win32gui.ShowWindow(the_program_to_hide , win32con.SW_HIDE)
-                    
+                    try:
+                        frgrnd_wndw = win32gui.GetForegroundWindow();
+                        wndw_title  = win32gui.GetWindowText(frgrnd_wndw);
+                        if wndw_title.endswith("lankabell_usage_notify.exe"):
+                            win32gui.ShowWindow(frgrnd_wndw, win32con.SW_HIDE);
+                    except Exception:
+                        pass
+
                     toaster = ToastNotifier()
                     span = soup.find_all('span', {'class':'styleCommon'})
 
@@ -72,7 +77,7 @@ while True:
                                     duration=6,
                                     )
 
-                    time.sleep(3600)
+                    time.sleep(60)
 
                 else:
                     username = str(input("Username: "))
@@ -101,6 +106,3 @@ while True:
 
     except Exception:
         quit()
-
-
-
