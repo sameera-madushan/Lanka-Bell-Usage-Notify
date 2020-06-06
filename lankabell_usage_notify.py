@@ -77,7 +77,7 @@ while True:
                                     duration=6,
                                     )
 
-                    time.sleep(60)
+                    time.sleep(3600)
 
                 else:
                     username = str(input("Username: "))
