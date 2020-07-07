@@ -1,3 +1,4 @@
+# *** This project is not maintained anymore ***
 # Lanka Bell Usage Notify 
 
 This is an application for [Lanka Bell](https://www.lankabell.com) users to get notifications about your monthly usage, remaining data and data validity period. This program will remind you about the prior mentioned stats in every hour as a desktop notification.
